@@ -1,0 +1,96 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class OrderDetailsService {
+
+  constructor() { }
+
+  foodDetails =[
+    {
+      id:1,
+      foodName:"item 1",
+      foodDetails:"foodDetails 1",
+      foodPrice:"100",
+      foodImg :"../../../assets/img/specials1.png" 
+    },
+    {
+      id:2,
+      foodName:"item 2",
+      foodDetails:"foodDetails 2",
+      foodPrice:200,
+      foodImg:"../../../assets/img/specials2.png" 
+    },
+    {
+      id:3,
+      foodName:"item 3",
+      foodDetails:"foodDetails 3",
+      foodPrice:300,
+      foodImg:"../../../assets/img/specials3.png" 
+    },
+    {
+      id:4,
+      foodName:"item 4",
+      foodDetails:"foodDetails 4",
+      foodPrice:400,
+      foodImg:"../../../assets/img/specials4.png" 
+    },
+    {
+      id:5,
+      foodName:"item 5",
+      foodDetails:"foodDetails 5",
+      foodPrice:500,
+      foodImg:"../../../assets/img/specials5.png" 
+    },
+    {
+      id:6,
+      foodName:"item 6",
+      foodDetails:"foodDetails 6",
+      foodPrice:600,
+      foodImg:"../../../assets/img/specials6.jpg" 
+    },
+    {
+      id:7,
+      foodName:"item 7",
+      foodDetails:"foodDetails 7",
+      foodPrice:700,
+      foodImg:"../../../assets/img/specials7.jpg" 
+    },
+    {
+      id:8,
+      foodName:"item 8",
+      foodDetails:"foodDetails 8",
+      foodPrice:800,
+      foodImg:"../../../assets/img/specials8.jpg" 
+    },
+    {
+      id:9,
+      foodName:"item 9",
+      foodDetails:"foodDetails 9",
+      foodPrice:800,
+      foodImg:"../../../assets/img/specials9.jpg" 
+    },
+    {
+      id:10,
+      foodName:"item 10",
+      foodDetails:"foodDetails 10",
+      foodPrice:800,
+      foodImg:"../../../assets/img/specials10.jpg" 
+    },
+    {
+      id:11,
+      foodName:"item 11",
+      foodDetails:"foodDetails 11",
+      foodPrice:800,
+      foodImg:"../../../assets/img/specials11.jpg" 
+    },
+    {
+      id:12,
+      foodName:"item 12",
+      foodDetails:"foodDetails 12",
+      foodPrice:1000,
+      foodImg:"../../../assets/img/specials12.jpg" 
+    },
+  ]
+}

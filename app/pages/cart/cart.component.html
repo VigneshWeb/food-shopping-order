@@ -1,0 +1,40 @@
+<section class="cart_section">
+    <div class="container">
+        <h2>Cart</h2>
+        <div *ngIf="cartItems">
+            <table>
+                <tr>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Sub Total</th>
+                    <th>Remove Item</th>
+                </tr>
+                <tr *ngFor="let todo of todos">
+                    <td><img style="width: 150px; height: 150px;" src="{{todo.img}}" alt="P1"></td>
+                    <td>₹
+                        {{todo.amt}}</td>
+                    <td>
+                        <div class="content">
+                            <button type="button" class="btn" (click)="inc(todo)"><i class="fa fa-plus"></i></button>
+                            <span>{{todo.qnt}}</span>
+                            <button type="button" class="btn" (click)="dec(todo)"><i class="fa fa-minus"></i></button>
+                        </div>
+                    </td>
+                    <td>
+                        ₹{{todo.qnt *todo.amt|number}}
+                    </td>
+                    <td>
+                        <button type="button" class="delete" (click)="singleDelete(todo.prodId)">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <div class="col-md-6 text-right">
+                <button type="button" class="removeall" (click)="removeall()">
+                    Remove All Item <i class="bi bi-trash3"></i></button>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,35 @@
+.cart_section{
+    padding: 40px 0;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+.img{
+    width: 200px;
+    height: 200px;
+}
+.btn{
+    border-radius: 50%;
+    color: #fff;
+    margin: 0 10px;
+    background-color: rgb(66, 238, 23);
+}
+.btn:hover{
+  background: rgb(235, 19, 19);  
+  color: black;
+}
+.qnt{
+  text-align: center;
+}
