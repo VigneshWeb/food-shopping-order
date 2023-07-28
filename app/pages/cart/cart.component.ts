@@ -8,6 +8,7 @@ import { Component, OnInit, } from '@angular/core';
 export class CartComponent implements OnInit {
 
 
+
   constructor() {
     img: String;
     amt: Number;
@@ -28,22 +29,23 @@ export class CartComponent implements OnInit {
     this.todos.get(item);
 
   };
-  removeItem(i: number): void {
-    this.todos.splice(i, 1);
+  removeItem(prod: number): void {
+    this.cartItems.splice(prod);
     console.log(this.todos)
   }
-
+  
   inc(prod: any) {
-    console.log(prod)
-    if (prod.qnt != 10) {
-      prod.qnt += 1;
-    }
+  console.log(prod)
+  if (prod.qnt != 10) {
+    prod.qnt += 1;
+  }
   }
   dec(prod: any) {
     if (prod.qnt != 1) {
-      prod.qnt -= 1;
+    prod.qnt -= 1;
     }
   }
+
 
 
   singleDelete(todo: any) {
@@ -57,12 +59,11 @@ export class CartComponent implements OnInit {
       }
   }
 
-
-  loadCart() {
-    if (localStorage.getItem('localCart')) {
-      this.todos = JSON.parse(localStorage.getItem('localCart') as any);
-    }
-  }
+  // loadCart() {
+  //   if (localStorage.getItem('localCart')) {
+  //     this.todos = JSON.parse(localStorage.getItem('localCart') as any);
+  //   }
+  // }
   removeall() {
     localStorage.removeItem('localCart');
     this.todos = [];
